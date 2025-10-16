@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import { FiMapPin, FiClock, FiArrowRight } from 'react-icons/fi';
 
 const JobCard = ({ job, onClick }) => {
+  // Split title to separate main title from bracketed text
+  const titleMatch = job.title.match(/^(.+?)\s*\((.+?)\)$/);
+  const mainTitle = titleMatch ? titleMatch[1].trim() : job.title;
+  const bracketedText = titleMatch ? titleMatch[2].trim() : null;
+
   return (
     <motion.div
       className="job-card"
@@ -16,18 +21,9 @@ const JobCard = ({ job, onClick }) => {
       transition={{ duration: 0.3 }}
     >
       <div className="job-card-header">
-        <div className="job-header-content">
-          <h3 className="job-title">{job.title}</h3>
-          <div className="job-meta">
-            <div className="job-location">
-              <FiMapPin />
-              <span>{job.location}</span>
-            </div>
-            <div className="job-type">
-              <FiClock />
-              <span>{job.type}</span>
-            </div>
-          </div>
+        <div className="job-title-container">
+          <h3 className="job-title">{mainTitle}</h3>
+          {bracketedText && <span className="job-subtitle">({bracketedText})</span>}
         </div>
         <motion.div
           className="job-arrow"
@@ -36,6 +32,17 @@ const JobCard = ({ job, onClick }) => {
         >
           <FiArrowRight />
         </motion.div>
+      </div>
+      
+      <div className="job-meta">
+        <div className="job-location">
+          <FiMapPin />
+          <span>{job.location}</span>
+        </div>
+        <div className="job-type">
+          <FiClock />
+          <span>{job.type}</span>
+        </div>
       </div>
       
       <p className="job-summary">{job.summary}</p>
