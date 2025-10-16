@@ -61,15 +61,36 @@ const ApplicationModal = ({ job, isOpen, onClose, onSubmit }) => {
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission (replace with actual Netlify form submission)
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Prepare form data for Netlify submission
+      const netlifyFormData = new FormData();
+      netlifyFormData.append('form-name', 'job-application');
+      netlifyFormData.append('name', formData.name);
+      netlifyFormData.append('email', formData.email);
+      netlifyFormData.append('linkedin', formData.linkedin || '');
+      netlifyFormData.append('message', formData.message);
+      netlifyFormData.append('job-title', job.title);
       
-      setIsSubmitted(true);
+      if (formData.resume) {
+        netlifyFormData.append('resume', formData.resume);
+      }
       
-      // Auto-close after 3 seconds
-      setTimeout(() => {
-        handleClose();
-      }, 3000);
+      // Submit to Netlify Forms
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(netlifyFormData).toString()
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        
+        // Auto-close after 3 seconds
+        setTimeout(() => {
+          handleClose();
+        }, 3000);
+      } else {
+        throw new Error('Form submission failed');
+      }
       
     } catch (error) {
       console.error('Form submission error:', error);
@@ -129,7 +150,7 @@ const ApplicationModal = ({ job, isOpen, onClose, onSubmit }) => {
                   </button>
                 </div>
 
-                <form onSubmit={handleSubmit} className="application-form" data-netlify="true" name="job-application">
+                <form onSubmit={handleSubmit} className="application-form" data-netlify="true" name="job-application" method="POST">
                   <input type="hidden" name="form-name" value="job-application" />
                   <input type="hidden" name="job-title" value={job.title} />
                   

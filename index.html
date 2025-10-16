@@ -9,6 +9,17 @@
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Hidden form for Netlify form detection -->
+    <form name="job-application" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="url" name="linkedin" />
+      <textarea name="message"></textarea>
+      <input type="file" name="resume" />
+      <input type="hidden" name="job-title" />
+    </form>
+    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
