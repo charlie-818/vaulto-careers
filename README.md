@@ -31,7 +31,7 @@ A sleek, minimal careers website for Vaulto AI, a leading crypto technology comp
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/charlie-818/vaulto-careers.git
 cd vaulto-careers
 ```
 
@@ -59,9 +59,16 @@ The built files will be in the `dist` directory, ready for deployment.
 
 ### Netlify (Recommended)
 
-1. Connect your repository to Netlify
-2. The `netlify.toml` file is already configured
-3. Deploy automatically on push to main branch
+1. Go to [Netlify](https://netlify.com) and sign in
+2. Click "Add new site" → "Import an existing project"
+3. Connect to GitHub and select `charlie-818/vaulto-careers`
+4. The `netlify.toml` file is already configured with:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node.js version: 20
+5. Click "Deploy site" - it will deploy automatically on every push to main branch
+
+**Repository URL**: https://github.com/charlie-818/vaulto-careers
 
 ### Other Platforms
 
