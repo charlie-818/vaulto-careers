@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Smart Contract Engineer",
+    "location": "Remote",
+    "type": "Full-time",
+    "summary": "Build and deploy secure smart contracts for DeFi protocols",
+    "description": "We're looking for a Senior Smart Contract Engineer to join our team and help build the next generation of DeFi protocols. You'll be responsible for designing, implementing, and auditing smart contracts that handle millions of dollars in value.",
+    "requirements": [
+      "5+ years of experience in smart contract development",
+      "Expert knowledge of Solidity and Ethereum ecosystem",
+      "Experience with DeFi protocols (AMMs, lending, derivatives)",
+      "Strong understanding of security best practices",
+      "Experience with testing frameworks (Hardhat, Foundry)",
+      "Knowledge of gas optimization techniques"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Remote-first culture",
+      "Health, dental, and vision insurance",
+      "Unlimited PTO",
+      "Learning and development budget",
+      "Top-tier equipment and home office setup"
+    ],
+    "posted": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "title": "Crypto Research Analyst",
+    "location": "San Francisco, CA",
+    "type": "Full-time",
+    "summary": "Analyze market trends and emerging crypto technologies",
+    "description": "Join our research team to analyze cryptocurrency markets, emerging technologies, and investment opportunities. You'll work closely with our engineering and product teams to inform strategic decisions.",
+    "requirements": [
+      "3+ years of experience in crypto/blockchain research",
+      "Strong analytical and quantitative skills",
+      "Experience with data analysis tools (Python, R, SQL)",
+      "Knowledge of DeFi, NFTs, and emerging crypto trends",
+      "Excellent written and verbal communication skills",
+      "CFA or similar financial certification preferred"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Flexible work arrangements",
+      "Health, dental, and vision insurance",
+      "401(k) with company matching",
+      "Professional development opportunities",
+      "Access to premium research tools and data"
+    ],
+    "posted": "2024-01-12"
+  },
+  {
+    "id": 3,
+    "title": "Frontend Developer (Web3)",
+    "location": "Remote",
+    "type": "Full-time",
+    "summary": "Build intuitive interfaces for blockchain applications",
+    "description": "We're seeking a Frontend Developer with Web3 experience to create beautiful, user-friendly interfaces for our blockchain applications. You'll work with modern frameworks and Web3 libraries to deliver exceptional user experiences.",
+    "requirements": [
+      "3+ years of frontend development experience",
+      "Proficiency in React, TypeScript, and modern CSS",
+      "Experience with Web3 libraries (ethers.js, web3.js)",
+      "Knowledge of wallet integrations (MetaMask, WalletConnect)",
+      "Experience with responsive design and accessibility",
+      "Understanding of blockchain concepts and DeFi protocols"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Remote-first culture",
+      "Health, dental, and vision insurance",
+      "Unlimited PTO",
+      "Learning and development budget",
+      "Flexible working hours"
+    ],
+    "posted": "2024-01-10"
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer (Blockchain Infrastructure)",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "summary": "Manage and scale blockchain infrastructure and cloud services",
+    "description": "Join our infrastructure team to build and maintain the systems that power our blockchain applications. You'll work with cutting-edge technologies to ensure high availability and performance.",
+    "requirements": [
+      "4+ years of DevOps/Infrastructure experience",
+      "Experience with cloud platforms (AWS, GCP, Azure)",
+      "Knowledge of containerization (Docker, Kubernetes)",
+      "Experience with blockchain node management",
+      "Proficiency in infrastructure as code (Terraform, CloudFormation)",
+      "Strong scripting skills (Bash, Python, Go)"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Health, dental, and vision insurance",
+      "401(k) with company matching",
+      "Professional development opportunities",
+      "Top-tier equipment and tools",
+      "Flexible work arrangements"
+    ],
+    "posted": "2024-01-08"
+  },
+  {
+    "id": 5,
+    "title": "Product Manager (DeFi)",
+    "location": "Remote",
+    "type": "Full-time",
+    "summary": "Lead product strategy for decentralized finance applications",
+    "description": "We're looking for a Product Manager with deep DeFi knowledge to lead the development of our decentralized finance products. You'll work with engineering, design, and business teams to deliver innovative solutions.",
+    "requirements": [
+      "4+ years of product management experience",
+      "Deep understanding of DeFi protocols and mechanics",
+      "Experience with agile development methodologies",
+      "Strong analytical and problem-solving skills",
+      "Excellent communication and leadership abilities",
+      "Technical background preferred"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Remote-first culture",
+      "Health, dental, and vision insurance",
+      "Unlimited PTO",
+      "Learning and development budget",
+      "Stock options program"
+    ],
+    "posted": "2024-01-05"
+  },
+  {
+    "id": 6,
+    "title": "Security Engineer (Blockchain)",
+    "location": "Remote",
+    "type": "Full-time",
+    "summary": "Secure our blockchain infrastructure and smart contracts",
+    "description": "Join our security team to protect our blockchain infrastructure and smart contracts. You'll conduct security audits, implement security best practices, and help build a security-first culture.",
+    "requirements": [
+      "3+ years of security engineering experience",
+      "Experience with smart contract security auditing",
+      "Knowledge of common blockchain vulnerabilities",
+      "Experience with penetration testing and vulnerability assessment",
+      "Strong understanding of cryptography and security protocols",
+      "Relevant security certifications preferred"
+    ],
+    "benefits": [
+      "Competitive salary + equity",
+      "Remote-first culture",
+      "Health, dental, and vision insurance",
+      "Unlimited PTO",
+      "Learning and development budget",
+      "Security conference attendance"
+    ],
+    "posted": "2024-01-03"
+  }
+]
