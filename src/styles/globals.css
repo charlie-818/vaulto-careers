@@ -425,7 +425,7 @@ p {
 }
 
 .job-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
@@ -451,7 +451,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 .job-location svg,
@@ -463,6 +463,7 @@ p {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-size: 0.8rem;
 }
 
 .job-footer {
@@ -475,7 +476,7 @@ p {
 
 .job-posted {
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 0.7rem;
 }
 
 .no-jobs {
