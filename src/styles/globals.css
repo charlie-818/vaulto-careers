@@ -634,15 +634,10 @@ p {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: var(--bg-primary);
-  border-radius: 0.5rem;
-  border: 1px solid var(--border-color);
   transition: all 0.2s ease;
 }
 
 .requirement-item:hover {
-  border-color: var(--accent-primary);
   transform: translateX(4px);
 }
 
@@ -714,9 +709,6 @@ p {
     min-width: auto;
   }
   
-  .requirement-item {
-    padding: 0.75rem;
-  }
 }
 
 /* Application Modal Styles */
