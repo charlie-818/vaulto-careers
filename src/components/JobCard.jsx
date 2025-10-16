@@ -16,7 +16,19 @@ const JobCard = ({ job, onClick }) => {
       transition={{ duration: 0.3 }}
     >
       <div className="job-card-header">
-        <h3 className="job-title">{job.title}</h3>
+        <div className="job-header-content">
+          <h3 className="job-title">{job.title}</h3>
+          <div className="job-meta">
+            <div className="job-location">
+              <FiMapPin />
+              <span>{job.location}</span>
+            </div>
+            <div className="job-type">
+              <FiClock />
+              <span>{job.type}</span>
+            </div>
+          </div>
+        </div>
         <motion.div
           className="job-arrow"
           whileHover={{ x: 4 }}
@@ -24,17 +36,6 @@ const JobCard = ({ job, onClick }) => {
         >
           <FiArrowRight />
         </motion.div>
-      </div>
-      
-      <div className="job-meta">
-        <div className="job-location">
-          <FiMapPin />
-          <span>{job.location}</span>
-        </div>
-        <div className="job-type">
-          <FiClock />
-          <span>{job.type}</span>
-        </div>
       </div>
       
       <p className="job-summary">{job.summary}</p>
