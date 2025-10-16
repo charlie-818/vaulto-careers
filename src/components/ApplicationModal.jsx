@@ -248,13 +248,12 @@ const ApplicationModal = ({ job, isOpen, onClose, onSubmit }) => {
                   className="success-icon"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                   <FiCheck />
                 </motion.div>
-                <h2>Application Submitted!</h2>
-                <p>Thank you for your interest in joining Vaulto AI. We've received your application for the <strong>{job.title}</strong> position and will review it shortly.</p>
-                <p>We'll be in touch within 5-7 business days.</p>
+                <h2>Application Sent</h2>
+                <p>We'll be in touch soon.</p>
               </div>
             )}
           </motion.div>
